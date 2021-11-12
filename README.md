@@ -16,10 +16,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Auteur:
-Sofie Berger (vervangen door jouw naam)
+Sofie Berger
 
 #### Je startniveau:
-Blauw (kies uit zwart, rood óf blauw)
+Blauw, maar rood ga ik ook zeker proberen!
 
 #### Je focus:
 hier je focus (kies uit responsive óf surface plane)
@@ -36,7 +36,7 @@ hier je focus (kies uit responsive óf surface plane)
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+link naar de website die je gaat namaken
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 hier de naam van de pagina  
