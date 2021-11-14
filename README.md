@@ -32,7 +32,7 @@ https://toogoodtogo.nl/nl
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 Homepagina
-<img src="images/homepagina1.png" width="375px" alt="omschrijving van de pagina">
+<img src="images/homepagina1.PNG" width="375px" alt="omschrijving van de pagina">
 <img src="images/homepagina2.png" width="375px" alt="omschrijving van de pagina">
 <img src="images/homepagina3.png" width="375px" alt="omschrijving van de pagina">
 <img src="images/homepagina4.png" width="375px" alt="omschrijving van de pagina">
