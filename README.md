@@ -33,16 +33,16 @@ https://toogoodtogo.nl/nl
 #### Screenshot(s) van de eerste pagina (small screen): 
 Homepagina
 <img src="images/homepagina1.PNG" width="375px" alt="omschrijving van de pagina">
-<img src="images/homepagina2.png" width="375px" alt="omschrijving van de pagina">
-<img src="images/homepagina3.png" width="375px" alt="omschrijving van de pagina">
-<img src="images/homepagina4.png" width="375px" alt="omschrijving van de pagina">
-<img src="images/homepagina5.png" width="375px" alt="omschrijving van de pagina">
+<img src="images/homepagina2.PNG" width="375px" alt="omschrijving van de pagina">
+<img src="images/homepagina3.PNG" width="375px" alt="omschrijving van de pagina">
+<img src="images/homepagina4.PNG" width="375px" alt="omschrijving van de pagina">
+<img src="images/homepagina5.PNG" width="375px" alt="omschrijving van de pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 Blog
-<img src="images/blog1.png" width="375px" alt="omschrijving van de pagina">
-<img src="images/blog2.png" width="375px" alt="omschrijving van de pagina">
-<img src="images/blog3.png" width="375px" alt="omschrijving van de pagina">
+<img src="images/blog1.PNG" width="375px" alt="omschrijving van de pagina">
+<img src="images/blog2.PNG" width="375px" alt="omschrijving van de pagina">
+<img src="images/blog3.PNG" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
