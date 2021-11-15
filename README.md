@@ -14,7 +14,7 @@ Sofie Berger
 Blauw, maar rood ga ik ook zeker proberen!
 
 #### Je focus:
-Surface plane
+Responsive
  
 </details>
 
@@ -34,15 +34,13 @@ https://toogoodtogo.nl/nl
 Homepagina
 <img src="images/homepagina1.PNG" width="375px" alt="omschrijving van de pagina">
 <img src="images/homepagina2.PNG" width="375px" alt="omschrijving van de pagina">
-<img src="images/homepagina3.PNG" width="375px" alt="omschrijving van de pagina">
-<img src="images/homepagina4.PNG" width="375px" alt="omschrijving van de pagina">
-<img src="images/homepagina5.PNG" width="375px" alt="omschrijving van de pagina">
+
 
 #### Screenshot(s) van de tweede pagina (small screen):
 Blog
 <img src="images/blog1.PNG" width="375px" alt="omschrijving van de pagina">
 <img src="images/blog2.PNG" width="375px" alt="omschrijving van de pagina">
-<img src="images/blog3.PNG" width="375px" alt="omschrijving van de pagina">
+
  
 </details>
 
