@@ -32,14 +32,12 @@ https://toogoodtogo.nl/nl
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 Homepagina
-<img src="images/homepagina1.PNG" width="375px" alt="omschrijving van de pagina">
-<img src="images/homepagina2.PNG" width="375px" alt="omschrijving van de pagina">
+<img src="images/homepagina-tgtg.png" width="375px" alt="omschrijving van de pagina">
 
 
 #### Screenshot(s) van de tweede pagina (small screen):
 Blog
-<img src="images/blog1.PNG" width="375px" alt="omschrijving van de pagina">
-<img src="images/blog2.PNG" width="375px" alt="omschrijving van de pagina">
+<img src="images/blog-tgtg.png" width="375px" alt="omschrijving van de pagina">
 
  
 </details>
