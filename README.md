@@ -57,7 +57,7 @@ Blog
 <img src="images/breakdown-home2.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
 ### dynamisch deel (blog): 
-<img src="images/breakdown-blog2jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+<img src="images/breakdown-blog2.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
