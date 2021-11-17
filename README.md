@@ -50,13 +50,14 @@ Blog
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina: 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+<img src="images/breakdown-home.jpg" width="375px" alt="breakdown van de hele pagina">
+<img src="images/breakdown-blog.jpg" width="375px" alt="breakdown van de hele pagina">
 
-### dynamisch deel (bijv menu): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+### dynamisch deel (homepagina): 
+<img src="images/breakdown-home2.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
-### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+### dynamisch deel (blog): 
+<img src="images/breakdown-blog2jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
