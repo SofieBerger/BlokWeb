@@ -72,7 +72,7 @@ Blog
 
 ### Stand van zaken
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+- lastig was om lettergroote voor responisive te maken. Kon het niet via inspecteren vinden
 
 ### Agenda voor meeting
 samen met je groepje opstellen
@@ -226,8 +226,8 @@ hier screenshot(s) van je eindresultaat
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+1. (dark/light theme) https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8
+2. (flexbox) https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+3. (font-size: rem) https://css-tricks.com/almanac/properties/f/font-size/
 
 </details>

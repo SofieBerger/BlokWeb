@@ -1,11 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-	<style type="text/css">
-		.st0{fill:#DC143C;}
-		.st1{fill:#F9E350;}
-	</style>
-	<rect class="st0" width="128" height="128"/>
-	<polygon class="st1" points="0,128 128,0 128,128 "/>
-	<polygon class="st0" points="32,128 128,32 128,128 "/>
-	<polygon class="st1" points="64,128 128,64 128,128 "/>
-	<polygon class="st0" points="92,128 128,92 128,128 "/>
-</svg>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1666"><defs><style>.cls-1{fill:#bdece5;}.cls-2{fill:#79d0c6;}.cls-3{fill:#45ada1;}</style></defs><title>Too Good To Go</title><ellipse class="cls-1" cx="1337.11" cy="952.64" rx="828.95" ry="485.9" transform="translate(-259.54 1334.85) rotate(-48.93)"/><ellipse class="cls-2" cx="1023.89" cy="832.06" rx="489.71" ry="822.5"/><ellipse class="cls-3" cx="663.91" cy="952.64" rx="485.9" ry="828.95" transform="translate(-462.48 670.6) rotate(-41.07)"/></svg>

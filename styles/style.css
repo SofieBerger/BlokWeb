@@ -3,3 +3,138 @@
   box-sizing:border-box;  
 }
 
+/* Algemene styling */
+:root {
+  --primary-font-color: #114d4d;
+  --secondary-font-color: #49ada1;
+  --tertiary-font-color: #212529;
+  --background-color: #fcf8f2;
+  --font-color-black: #000000;
+  --font-color-white: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  font-size: 16px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Styling navigatie */
+nav ul li {
+  list-style-type: none;
+}
+
+/* Styling tekst */
+h1, h2, h3, h4, h5, h6, a, button {
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  color: var(--primary-font-color);
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 900;
+}
+
+h3 {
+  color: var(--secondary-font-color);
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+h4 {
+  color: var(--secondary-font-color);
+  font-size: 2.25rem;
+  font-weight: 900;
+}
+
+h5 {
+  color: var(--tertiary-font-color);
+  font-size: 1.25rem;
+  font-weight: 900;
+  line-height: 1.2;
+  text-align: center;
+}
+
+h6 {
+  font-size: 1.15rem;
+  font-weight: 500;
+  max-width: 290px;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: var(--primary-font-color);
+
+}
+
+/* logo */
+header img {
+  height: 40px;
+}
+
+/* footer styling */
+footer nav li {
+  text-align: center;
+}
+
+footer nav li a {
+  color: var(--font-color-black);
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+footer hr {
+  color: #d8d8d8;
+  height: 2px;
+  margin-bottom: 3rem;
+}
+
+/* Button styling */
+button {
+  background-color: var(--primary-font-color);
+  color: var(--font-color-white);
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 120px;
+  border: none;
+  text-align: center;
+  min-width: 200px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  box-shadow: 0 12px 40px 0 hsl(0deg 0% 45% / 50%);
+}
+
+
+/* img tijdelijke styling */
+img {
+  height: 3em;
+}
+/* --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px; 
+*/
