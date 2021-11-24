@@ -71,8 +71,11 @@ Blog
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-- lastig was om lettergroote voor responisive te maken. Kon het niet via inspecteren vinden
+hier dit ging goed & dit was lastig
+- de huisstijl toepassen was makkelijk. De html zag er gelijk al goed uit! 
+<img src="images/week1.png" width="375px" alt="css code kleuren">
+- Ik had problemen met de apple en play store button styling. Uiteindelijk heb ik dit opgelost door de buttons in een aparte div te doen. De styling van de buttons werd in de section namelijk steeds overschreven door een stekere selector.
+<img src="images/week1.1.png" width="375px" alt="apple en play store button">
 
 ### Agenda voor meeting
 samen met je groepje opstellen
