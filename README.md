@@ -80,11 +80,13 @@ hier dit ging goed & dit was lastig
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| Romy  |
+Hoe kan ik ervoor zorgen dat de tekst in een cirkel blijft staan, ook bij een groter schermformaat?
+| Hidde  |
+Hoe zorg ik ervoor dat de button tegen de img aan staat?
+| Sofie  |
+Kan ik switchen van responsive naar surface plane?
+Wat houdt de state van control in?
 
 
 ### Verslag van meeting
