@@ -265,26 +265,27 @@ footer section:nth-of-type(2) ul img{
 
 /* 1e section */
 /* ------------- */
-.blog section:nth-of-type(1) h2{
+.blog main section:nth-of-type(1) h2{
   font-size: 2.7em;
   max-width: 100%;
   word-break: break-word;
 }
 
-.blog section:nth-of-type(1) h3 {
-  margin: 0 0 3em 0;
+.blog main section:nth-of-type(1) h3 {
+  margin: 0 0 1em 0;
 }
 
 /* ------------- */
-/* 2e section */
+/* 2e section kaartjes */
 /* ------------- */
-.blog section:nth-of-type(2) img {
+.blog main section:nth-of-type(2) article img {
   border-radius: 2em 2em 0 0;
   height: 180px;
+  margin: 2em 0 0 0;
   width: 100%;
 }
 
-.blog section:nth-of-type(2) div {
+.blog main section:nth-of-type(2) article div {
   background-color: white;
   display: block;
   border-radius: 0 0 2em 2em;
@@ -292,24 +293,26 @@ footer section:nth-of-type(2) ul img{
   padding: 1.5em;
 }
 
-.blog section:nth-of-type(2) h2 {
+.blog main section:nth-of-type(2) article h2 {
   font-size: 1.7em;
 }
 
-.blog section:nth-of-type(2) h3 {
+.blog main section:nth-of-type(2) article h3 {
   font-size: 1.4em;
 }
 
 /* ------------- */
-/* 3e section */
+/* 4e section kaartjes */
 /* ------------- */
-.blog section:nth-of-type(3) img {
+.blog main section:nth-of-type(4) article img {
   border-radius: 2em 2em 0 0;
   height: 180px;
+  margin: 2em 0 0 0;
+  box-shadow: none;
   width: 100%;
 }
 
-.blog section:nth-of-type(3) div {
+.blog main section:nth-of-type(4) article div {
   background-color: white;
   display: block;
   border-radius: 0 0 2em 2em;
@@ -317,35 +320,12 @@ footer section:nth-of-type(2) ul img{
   padding: 1.5em;
 }
 
-.blog section:nth-of-type(3) h2 {
+.blog main section:nth-of-type(4) article h2 {
   font-size: 1.7em;
 }
 
-.blog section:nth-of-type(3) h3 {
+.blog main section:nth-of-type(4) article h3 {
   font-size: 1.4em;
 }
+    
 
-
-
-
-/* .blog .card img {
-  border-radius: 2em 2em 0 0;
-  height: 180px;
-  width: 100%;
-}
-
-.blog .card div {
-  background-color: white;
-  display: block;
-  border-radius: 0 0 2em 2em;
-  max-width: 100%;
-  padding: 1.5em;
-}
-
-.blog .card h2 {
-  font-size: 1.7em;
-}
-
-.blog .card h3 {
-  font-size: 1.4em;
-} */
