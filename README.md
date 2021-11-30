@@ -233,6 +233,6 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
 1. (dark/light theme) https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8
 2. (flexbox) https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-3. (font-size: rem) https://css-tricks.com/almanac/properties/f/font-size/
+3. 
 
 </details>

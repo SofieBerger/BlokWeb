@@ -13,6 +13,17 @@
   --background-color: #fcf8f2;
   --font-color-black: #000000;
   --font-color-white: #ffffff;
+  --card-color: #ffffff;
+}
+
+[data-theme="dark"] {
+  --primary-font-color: #28B8B8;
+  --secondary-font-color: #aeddd8;
+  --tertiary-font-color: #f5f8fa;
+  --background-color: #121212;
+  --font-color-black: #ffffff;
+  --font-color-white: #000000;
+  --card-color: #414141;
 }
 
 body {
@@ -35,6 +46,7 @@ section {
 nav ul li {
   list-style-type: none;
 }
+
 
 /* Styling tekst */
 h1, h2, h3, h4, h5, h6, a, button {
@@ -95,8 +107,11 @@ p {
 }
 
 /* logo */
-header img {
-  height: 40px;
+header a img {
+  position: relative;
+  top: 1em;
+  width: 4.5em;
+
 }
 
 /* ------------- */
@@ -197,14 +212,14 @@ main section:nth-of-type(3) h6 {
 }
 
 /* div downloadsbuttons */
-main div:nth-of-type(1) {
+main div:nth-of-type(2) {
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
 /* styling downloadsbuttons */
-main div:nth-of-type(1) img {
+main div:nth-of-type(2) img {
   height: 2.5em;
   margin-top: 2.5em;
   margin-bottom: 2.5em;
@@ -262,6 +277,7 @@ footer section:nth-of-type(2) ul img{
 /* ------------- */
 /* Blog pagina */
 /* ------------- */
+/* ------------- */
 
 /* 1e section */
 /* ------------- */
@@ -286,7 +302,7 @@ footer section:nth-of-type(2) ul img{
 }
 
 .blog main section:nth-of-type(2) article div {
-  background-color: white;
+  background-color: var(--card-color);
   display: block;
   border-radius: 0 0 2em 2em;
   max-width: 100%;
@@ -313,7 +329,7 @@ footer section:nth-of-type(2) ul img{
 }
 
 .blog main section:nth-of-type(4) article div {
-  background-color: white;
+  background-color: var(--card-color);
   display: block;
   border-radius: 0 0 2em 2em;
   max-width: 100%;
@@ -327,5 +343,70 @@ footer section:nth-of-type(2) ul img{
 .blog main section:nth-of-type(4) article h3 {
   font-size: 1.4em;
 }
-    
 
+/* ------------- */
+/* ------------- */
+/* hamburger menu */
+/* ------------- */
+/* ------------- */
+
+/* ------------- */
+/* ------------- */
+/* Dark mode */
+/* ------------- */
+/* ------------- */
+/* .theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+Bron: https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 */
