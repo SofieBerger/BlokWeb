@@ -36,8 +36,8 @@ Homepagina
 
 
 #### Screenshot(s) van de tweede pagina (small screen):
-Blog
-<img src="images/blog-tgtg.png" width="375px" alt="omschrijving van de pagina">
+Voor ondernemers
+<img src="images/ondernemers-tgtg.png" width="375px" alt="omschrijving van de pagina">
 
  
 </details>
@@ -51,13 +51,13 @@ Blog
 
 ### de hele pagina: 
 <img src="images/breakdown-home.jpg" width="375px" alt="breakdown van de hele pagina">
-<img src="images/breakdown-blog.jpg" width="375px" alt="breakdown van de hele pagina">
+<img src="images/breakdown-ondernemers.jpg" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (homepagina): 
 <img src="images/breakdown-home2.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
-### dynamisch deel (blog): 
-<img src="images/breakdown-blog2.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+### dynamisch deel (ondernemers): 
+<img src="images/breakdown-ondernemers2.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
