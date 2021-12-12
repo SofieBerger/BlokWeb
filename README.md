@@ -208,7 +208,7 @@ Oplossingen:
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Beide pagina's heb ik nu af, en nu wil ik vooral gaan kijken naar de extra dingetjes van de surface plane.
 
 
 ### Agenda voor meeting
@@ -227,10 +227,8 @@ In het hamburgermenu aangeven op welke pagina je zit. Afbeelding heeft dezelfde 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- In het hamburgermenu aangeven op welke pagina je nu bent is niet gelukt.
+- De styling van de afbeelding is opgelost met flex-direction:column
 
 </details>
 
@@ -244,11 +242,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-### Screenshot(s)
-
-hier screenshot(s) van je eindresultaat
+De html ging echt super goed, en ik kon alles eigenlijk binnen 5 minuten erin zetten. De CSS ging deze keer ook heel goed. Soms had ik wat moeite met positioneren van items, maar dan ga je van alles uitproberen en dan lukt het wel. Ik vind JavaScript nog steeds lastig, en heb dus alleen het minimale gedaan wat nodig was.
 
 </details>
 
@@ -265,6 +259,7 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
 1. (flexbox) https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 2.(fancy borders)  https://9elements.github.io/fancy-border-radius/#34.19.44.26--.
-3. 
+3. (verticale tekst scroll) https://www.youtube.com/watch?v=yCyD5AZegLk&t=16s
+4. (SVG animatie) https://www.youtube.com/watch?v=gWai7fYp9PY&t=9s
 
 </details>

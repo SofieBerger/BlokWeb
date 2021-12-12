@@ -19,7 +19,7 @@
 
 @media (prefers-color-scheme:dark){
   :root {
-  --primary-font-color: #dcffff;
+  --primary-font-color: #ffffff;
   --secondary-font-color: #aeddd8;
   --tertiary-font-color: #f5f8fa;
   --background-color: #121212;
@@ -48,7 +48,6 @@ section {
   width: 100%;
 }
 
-
 /* Responsive one column*/
 @media (min-width:20em) {
   body{
@@ -57,7 +56,7 @@ section {
   }
 }
 
-/* Styling navigatie */
+/* Header */
 header {
   background: var(--background-color);
   height: 6em;
@@ -141,13 +140,15 @@ header nav ul li{
   padding: 0.6em 0;
 }
 
-header nav ul li :hover {
+/* Styling states navigatie */
+header nav ul li:hover {
   text-decoration: 0.15em underline #49ada1;
 }
 
 header button:hover {
   border: none;
   box-shadow: none;
+  background-color: transparent;
 }
 
 header button:focus {
@@ -179,7 +180,7 @@ nav.transitie_navigatie button span:nth-of-type(3){
   transform: translateY(15px) translateX(0) rotate(-45deg);
 }
 
-/* Styling tekst */
+/* Algemene styling tekst */
 h1, h2, h3, h4, h5, h6, a, button {
   color: var(--primary-font-color);
   font-family: 'Poppins', sans-serif;
@@ -240,6 +241,7 @@ a {
   text-decoration: none;
 }
 
+/* Link states */
 a:hover {
   text-decoration: 0.2em underline #114d4d;
   transition: 1s;
@@ -256,7 +258,7 @@ a:active {
 }
 
 /* ------------- */
-/* footer styling */
+/* Footer styling */
 /* ------------- */
 footer nav ul {
   margin: 0;
@@ -274,14 +276,6 @@ footer nav li a {
   text-decoration: none;
 }
 
-/* divider styling */
-footer hr {
-  color: #d8d8d8;
-  height: 2px;
-  margin-bottom: 3em;
-  width: 100%;
-}
-
 /* footer social icons */
 footer section:nth-of-type(2) ul {
   display: flex;
@@ -292,7 +286,62 @@ footer section:nth-of-type(2) ul {
 
 footer section:nth-of-type(2) ul img{
   height: 4em;
-} 
+}
+
+/* Divider styling */
+footer hr {
+  color: #d8d8d8;
+  height: 2px;
+  margin-bottom: 3em;
+  width: 100%;
+}
+
+/* -------------- */
+/* Logo animatie footer */
+/* -------------- */
+footer div {
+  display: flex;
+}
+
+footer svg {
+  width: 5em;
+  height: auto;
+  margin: auto;
+}
+
+#left {
+  animation: rotate-left 2s infinite ease;
+  transform-origin: center;
+}
+
+#middle {
+  animation: rotate-middle 2s infinite ease-out;
+  transform-origin: center;
+}
+
+#right {
+  animation: rotate-right 2s infinite ease-out;
+  transform-origin: center;
+}
+
+@keyframes rotate-left {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotate-middle {
+  100% {
+    transform: rotate(-180deg);
+  }
+}
+
+@keyframes rotate-right {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Bron: https://www.youtube.com/watch?v=gWai7fYp9PY&t=9s */
 
 /* ------------- */
 /* Button styling */
@@ -311,6 +360,7 @@ button {
   margin-top: 2em;
   padding: 1em;
   text-align: center;
+  transition: 0.2s;
   width: 100%;
 }
 
@@ -322,7 +372,6 @@ button:hover {
   cursor: pointer;
 }
 
-
 button:focus {
   outline: 0.2em solid #ffad32;
   outline-offset: 0.2em;
@@ -332,7 +381,6 @@ button:active {
   background-color: #082424;
   color: #ffffff;
 }
-
 
 /* ------------- */
 /* ------------- */
@@ -360,6 +408,7 @@ main section:first-of-type a img {
 }
 
 main section:first-of-type h1 {
+  padding: 0 0.3em;
   animation: text-focus 1.5s normal;
 }
 
@@ -383,9 +432,18 @@ main section:nth-of-type(3) {
   justify-content: center;
 }
 
-main section:nth-of-type(3) img:nth-of-type(1){
+main section:nth-of-type(3) img {
   height: 25em;
   padding: 3em 0;
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  0% {transform:rotate(0)
+  }
+  100% {
+    transform:rotate(360deg)
+  }
 }
 
 main section:nth-of-type(3) h2 {
@@ -440,19 +498,19 @@ main section:last-of-type p {
   0% {
     transform: translateX(100%);
   }
-  /* 50% {
-    transform:scale(2);
-  } */
   100% {
     transform: translateX(-100%);
   }
 }
+/* Bron:https://www.youtube.com/watch?v=yCyD5AZegLk&t=16s */
 
 /* ------------- */
 /* ------------- */
 /* Ondernemers pagina */
 /* ------------- */
 /* ------------- */
+
+/* Algemene styling */
 .ondernemers button {
   background-color: var(--secondary-font-color);
 }
@@ -473,6 +531,7 @@ main section:last-of-type p {
 .ondernemers button:active {
   background-color: #255751;
   color: #ffffff;
+  border-color: #255751;
 }
 
 .ondernemers h2{
@@ -593,10 +652,17 @@ form:active {
 
 /* Logo's bedrijven */
 .ondernemers section:nth-of-type(3) img:nth-of-type(n) {
+  animation: none;  /* anders wordt deze overschreven */
   height: auto;
   margin: auto;
+  transition: 0.2s;
   padding: 0.5em;
   width: 100%;
+}
+
+.ondernemers section:nth-of-type(3) img:nth-of-type(n):hover {
+  transform: scale(2);
+  background: var(--background-color);
 }
 
 /* ------------- */
@@ -619,7 +685,7 @@ form:active {
 }
 
 .ondernemers section:nth-of-type(4) p {
-  margin: auto;
+  text-align: center;
 }
 
 /* ------------- */
@@ -638,7 +704,7 @@ form:active {
 }
 
 .ondernemers section:nth-of-type(6) iframe {
-  max-width: 85vw;
+  max-width: 100%;
 }
 
 /* ------------- */
@@ -655,7 +721,8 @@ form:active {
 .ondernemers section:nth-of-type(7) article img {
   border-radius: 2em;
   height: 18em;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .ondernemers section:nth-of-type(7) p {
@@ -671,7 +738,13 @@ form:active {
 .ondernemers section:nth-of-type(7) div img {
   width: 3em;
   height: 1.5em;
+  transition: 0.5s;
   margin: 0;
+}
+
+.ondernemers section:nth-of-type(7) div img:hover {
+  transform: scale(3);
+  background: #fcf8f2;
 }
 
 .ondernemers section:nth-of-type(7) div p {
