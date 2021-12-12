@@ -1,0 +1,854 @@
+/* CSS Document */
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+/* ------------- */
+/* Algemene styling */
+/* ------------- */
+:root {
+  --primary-font-color: #114d4d;
+  --secondary-font-color: #49ada1;
+  --tertiary-font-color: #212529;
+  --background-color: #fcf8f2;
+  --font-color-black: #000000;
+  --font-color-white: #ffffff;
+  --card-color: #ffffff;
+  --box-shadow: #a1a1a1;
+}
+
+@media (prefers-color-scheme:dark){
+  :root {
+  --primary-font-color: #ffffff;
+  --secondary-font-color: #aeddd8;
+  --tertiary-font-color: #f5f8fa;
+  --background-color: #121212;
+  --font-color-black: #ffffff;
+  --font-color-white: #000000;
+  --card-color: #414141;
+  --box-shadow: none;
+  }
+}
+
+body {
+  background-color: var(--background-color);
+  font-size: 0.8em;
+  /* max-width: 40em; */
+  margin: auto;
+  padding: 0 1em;
+}
+
+main {
+  margin-top: 7em;
+}
+
+section {
+  padding: 0 1em;
+  position: relative;
+  width: 100%;
+}
+
+/* Responsive one column*/
+@media (min-width:20em) {
+  body{
+    max-width: 40em;
+    margin: auto;
+  }
+}
+
+/* Header */
+header {
+  background: var(--background-color);
+  height: 6em;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+/* logo */
+header a img{
+  left: 1.5em;
+  position: relative;
+  top: 1.5em;
+  width: 4.5em;
+  z-index: 2;
+}
+
+header nav button{
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  height: 1.3em;
+  position: absolute;
+  right: 1.5em;
+  top: 1.5em;
+  margin: 0;
+  padding: 0.7em;
+  width: 25%;
+  z-index: 4;
+}
+
+header nav button span {
+  background: var(--primary-font-color);
+  height: 0.2em;
+  position: absolute;
+  right: 0;
+  width: 2em;
+}
+
+/* Styling streepjes hamburgermenu */
+header nav button span:nth-of-type(1){
+  border-radius: 0.5em;
+  top: 100%;
+  transition: .5s;
+}
+
+header nav button span:nth-of-type(2){
+  border-radius: 0.5em;
+  top: 50%;
+}
+
+header nav button span:last-of-type{
+  border-radius: 0.5em;
+  top: 0%;
+  transition: .5s;
+}
+
+/* Styling aside (uitgeklapt menu)*/
+header nav aside{
+  background-color: var(--background-color);
+  bottom: 0;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateY(-100%);
+  transition: .5s;
+  width: 100%;
+}
+
+header nav aside ul{
+  margin-top: 6em;
+
+}
+header nav ul li{
+  font-size: 1.7em;
+  font-weight: 800;
+  list-style-type: none;
+  padding: 0.6em 0;
+}
+
+/* Styling states navigatie */
+header nav ul li:hover {
+  text-decoration: 0.15em underline #49ada1;
+}
+
+header button:hover {
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+header button:focus {
+  outline: none;
+}
+
+header button:active {
+  background-color: var(--background-color);
+}
+
+/* css voor de java */
+nav.transitie_navigatie aside{
+	transform: translateX(0%);
+}
+
+nav.transitie_navigatie button span:first-of-type{
+  color: var(--text-color);
+}
+
+nav.transitie_navigatie button span:nth-of-type(1){
+  transform: translateY(-10px) translateX(0) rotate(45deg);
+}
+  
+nav.transitie_navigatie button span:nth-of-type(2){
+  opacity: 0;
+}
+
+nav.transitie_navigatie button span:nth-of-type(3){
+  transform: translateY(15px) translateX(0) rotate(-45deg);
+}
+
+/* Algemene styling tekst */
+h1, h2, h3, h4, h5, h6, a, button {
+  color: var(--primary-font-color);
+  font-family: 'Poppins', sans-serif;
+  line-height: 1;
+  margin-bottom: 0.5em;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 4.5em;
+  font-weight: 900;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5em;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+h3 {
+  color: var(--secondary-font-color);
+  font-weight: 400;
+  font-size: 2em;
+  margin-top: 1em;
+}
+
+h4 {
+  color: var(--secondary-font-color);
+  font-size: 2.5em;
+  font-weight: 900;
+}
+
+h5 {
+  color: var(--tertiary-font-color);
+  font-size: 1.7em;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+h6 {
+  font-size: 1.4em;
+  font-weight: 500;
+  text-align: center;
+}
+
+p {
+  color: var(--primary-font-color);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Link states */
+a:hover {
+  text-decoration: 0.2em underline #114d4d;
+  transition: 1s;
+}
+
+a:focus {
+  outline: 0.2em solid #ffad32;
+  outline-offset: 0.2em;
+}
+
+a:active {
+  background-color: #255751;
+  color: #ffffff;
+}
+
+/* ------------- */
+/* Footer styling */
+/* ------------- */
+footer nav ul {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 3.5em;
+  text-align: center;
+  list-style: none;
+}
+
+footer nav li a {
+  color: var(--font-color-black);
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 2;
+  text-decoration: none;
+}
+
+/* footer social icons */
+footer section:nth-of-type(2) ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+}
+
+footer section:nth-of-type(2) ul img{
+  height: 4em;
+}
+
+/* Divider styling */
+footer hr {
+  color: #d8d8d8;
+  height: 2px;
+  margin-bottom: 3em;
+  width: 100%;
+}
+
+/* -------------- */
+/* Logo animatie footer */
+/* -------------- */
+footer div {
+  display: flex;
+}
+
+footer svg {
+  width: 5em;
+  height: auto;
+  margin: auto;
+}
+
+#left {
+  animation: rotate-left 2s infinite ease;
+  transform-origin: center;
+}
+
+#middle {
+  animation: rotate-middle 2s infinite ease-out;
+  transform-origin: center;
+}
+
+#right {
+  animation: rotate-right 2s infinite ease-out;
+  transform-origin: center;
+}
+
+@keyframes rotate-left {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotate-middle {
+  100% {
+    transform: rotate(-180deg);
+  }
+}
+
+@keyframes rotate-right {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Bron: https://www.youtube.com/watch?v=gWai7fYp9PY&t=9s */
+
+/* ------------- */
+/* Button styling */
+/* ------------- */
+button {
+  background-color: var(--primary-font-color);
+  border-radius: 2em;
+  border: none;
+  /* box-shadow: 0 12px 40px 0 var(--box-shadow); */
+  color: var(--font-color-white);
+  font-size: 1.4em;
+  font-weight: 500;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  margin-bottom: 3em;
+  margin-top: 2em;
+  padding: 1em;
+  text-align: center;
+  transition: 0.2s;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #fcf8f2;
+  border: 0.15em solid #114d4d;
+  box-shadow: 0 12px 40px 0 var(--box-shadow);
+  color: #000000;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0.2em solid #ffad32;
+  outline-offset: 0.2em;
+}
+
+button:active {
+  background-color: #082424;
+  color: #ffffff;
+}
+
+/* ------------- */
+/* ------------- */
+/* Home pagina */
+/* ------------- */
+/* ------------- */
+
+/* ------------- */
+/* 1e section */
+/* ------------- */
+main section:first-of-type {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main section:first-of-type img{
+  height: 25em;
+}
+
+/* download buttons */
+main section:first-of-type a img {
+  height: 2.5em;
+  padding-right: 0.5em;
+}
+
+main section:first-of-type h1 {
+  padding: 0 0.3em;
+  animation: text-focus 1.5s normal;
+}
+
+@keyframes text-focus {
+  0%{
+    filter: blur(15px);
+    opacity: 0;
+  }
+  100%{
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+/* ------------- */
+/* 3e section */
+/* ------------- */
+main section:nth-of-type(3) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main section:nth-of-type(3) img {
+  height: 25em;
+  padding: 3em 0;
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  0% {transform:rotate(0)
+  }
+  100% {
+    transform:rotate(360deg)
+  }
+}
+
+main section:nth-of-type(3) h2 {
+  font-weight: 800;
+  font-size: 2.8em;
+  text-align: center;
+  padding: 0 0.5em;
+}
+
+main section:nth-of-type(3) h4 {
+  padding-top: 1em;
+}
+
+main section:nth-of-type(3) h6 {
+  padding: 0 0.7em;
+}
+
+/* ------------- */
+/* 4e section */
+/* ------------- */
+main section:nth-of-type(4) article{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 4em;
+}
+
+main section:nth-of-type(4) article img {
+  border-radius: 2em;
+  box-shadow: 0 8px 40px 0 var(--box-shadow);
+  margin-top: 2em;
+  margin-bottom: 3em;
+  width: 100%;
+}
+
+/* ------------- */
+/* 5e section */
+/* ------------- */
+/* Animerende tekst */
+main section:last-of-type {
+  overflow: hidden;
+}
+
+main section:last-of-type p {
+  transform: translateX(100%);
+	animation: scrolling-text 10s linear infinite;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+@keyframes scrolling-text {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/* Bron:https://www.youtube.com/watch?v=yCyD5AZegLk&t=16s */
+
+/* ------------- */
+/* ------------- */
+/* Ondernemers pagina */
+/* ------------- */
+/* ------------- */
+
+/* Algemene styling */
+.ondernemers button {
+  background-color: var(--secondary-font-color);
+}
+
+.ondernemers button:hover {
+  background-color: #fcf8f2;
+  border: 0.15em solid #49ada1;
+  box-shadow: 0 12px 40px 0 var(--box-shadow);
+  color: #000000;
+  cursor: pointer;
+}
+
+.ondernemers button:focus {
+  outline: 0.2em solid #ffad32;
+  outline-offset: 0.2em;
+}
+
+.ondernemers button:active {
+  background-color: #255751;
+  color: #ffffff;
+  border-color: #255751;
+}
+
+.ondernemers h2{
+  font-size: 2.2em;
+}
+
+.ondernemers h5 {
+  color: var(--primary-font-color);
+}
+
+/* ------------- */
+/* 1e section */
+/* ------------- */
+.ondernemers section:nth-of-type(1) h1 {
+  font-size: 3.5em;
+  text-align: left;
+  line-height: 1.2;
+}
+
+.ondernemers section:nth-of-type(1) h3 {
+  font-size: 1.9em;
+  margin: 0;
+  padding-bottom: 0.5em;
+}
+
+/* ------------- */
+/* 2e section */
+/* ------------- */
+.ondernemers section:nth-of-type(2) form {
+  margin: 1.5em 0;
+}
+
+.ondernemers section:nth-of-type(2) input {
+  background-color: #ffffff;
+  border-radius: 30px;
+  border: 0.1em solid #114d4d;
+  font-family: 'Poppins', sans-serif;
+  height: 4.2em;
+  padding: 1em 1em 1em 5em;
+  width: 100%;
+}
+
+/* Styling van het eerste formulier element */
+.ondernemers section:nth-of-type(2) select {
+  background-color: #ffffff;
+  border-radius: 30px;
+  border: 0.1em solid #114d4d;
+  color: #87a5a5;
+  font-size: 1.2em;
+  height: 3.5em;
+  font-family: 'Poppins', sans-serif;
+  padding: 1em 1em 1em 5em;
+  width: 100%;
+}
+
+.ondernemers section:nth-of-type(2) ::placeholder {
+  color: #87a5a5;
+  font-size: 1.2em;
+}
+
+.ondernemers section:nth-of-type(2) label {
+  color: var(--primary-font-color);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.6em;
+  padding-left: 1em;
+}
+
+form:hover {
+  text-decoration: 0.2em underline #114d4d;
+  transition: 1s;
+}
+
+input:focus {
+  outline: 0.2em solid #ffad32;
+  outline-offset: 0.2em;
+}
+
+select:focus {
+  outline: 0.2em solid #ffad32;
+  outline-offset: 0.2em;
+}
+
+form:active {
+  background-color: #255751;
+  color: #ffffff;
+}
+
+/* iconen in het formulier */
+.ondernemers form {
+  position: relative;
+}
+
+.ondernemers form img {
+  width: 2em;
+  position: absolute;
+  top: 3.2em;
+  left: 1.5em;
+}
+
+/* ------------- */
+/* 3e section */
+/* ------------- */
+.ondernemers section:nth-of-type(3) {
+  margin: 3em 0 8em 0;
+}
+
+.ondernemers section:nth-of-type(3) p {
+  text-transform: uppercase;
+  margin-top: 0;
+  text-align: center;
+}
+
+.ondernemers section:nth-of-type(3) div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Logo's bedrijven */
+.ondernemers section:nth-of-type(3) img:nth-of-type(n) {
+  animation: none;  /* anders wordt deze overschreven */
+  height: auto;
+  margin: auto;
+  transition: 0.2s;
+  padding: 0.5em;
+  width: 100%;
+}
+
+.ondernemers section:nth-of-type(3) img:nth-of-type(n):hover {
+  transform: scale(2);
+  background: var(--background-color);
+}
+
+/* ------------- */
+/* 4e section */
+/* ------------- */
+.ondernemers section:nth-of-type(4) article {
+  background-color: var(--card-color);
+  box-shadow: 0 0px 16px 0 var(--box-shadow);
+  border-radius: 2em;
+  height: 100%;
+  margin-bottom: 2.5em;
+  padding: 1.5em;
+}
+
+.ondernemers section:nth-of-type(4) img {
+  box-shadow: none;
+  height: 7.5em;
+  margin: 1em auto;
+  width: auto;
+}
+
+.ondernemers section:nth-of-type(4) p {
+  text-align: center;
+}
+
+/* ------------- */
+/* 5e section */
+/* ------------- */
+.ondernemers section:nth-of-type(5) h2 {
+  padding: 2em 0em;
+  text-align: center;
+}
+
+/* ------------- */
+/* 6e section */
+/* ------------- */
+.ondernemers section:nth-of-type(6) h3 {
+  text-align: center;
+}
+
+.ondernemers section:nth-of-type(6) iframe {
+  max-width: 100%;
+}
+
+/* ------------- */
+/* 7e section */
+/* ------------- */
+.ondernemers section:nth-of-type(7) article {
+  padding: 3em 0;
+}
+
+.ondernemers section:nth-of-type(7) article h2 {
+  margin-bottom: 1.3em;
+}
+
+.ondernemers section:nth-of-type(7) article img {
+  border-radius: 2em;
+  height: 18em;
+  max-width: 100%;
+  height: auto;
+}
+
+.ondernemers section:nth-of-type(7) p {
+  font-weight: 600;
+  font-size: 1.4em;
+}
+
+.ondernemers section:nth-of-type(7) div {
+  display: flex;
+  align-items: center;
+}
+
+.ondernemers section:nth-of-type(7) div img {
+  width: 3em;
+  height: 1.5em;
+  transition: 0.5s;
+  margin: 0;
+}
+
+.ondernemers section:nth-of-type(7) div img:hover {
+  transform: scale(3);
+  background: #fcf8f2;
+}
+
+.ondernemers section:nth-of-type(7) div p {
+  font-weight: 100;
+  font-size: 1.2em;
+  padding-left: 0.6em;
+}
+
+.ondernemers section:nth-of-type(7) article p:last-of-type {
+  font-size: 1.2em;
+  font-weight: 100;
+}
+
+/* ------------- */
+/* 8e section */
+/* ------------- */
+.ondernemers section:nth-of-type(8) h2 {
+  padding: 3em 0em;
+  text-align: center;
+}
+
+/* ------------- */
+/* 9e section */
+/* ------------- */
+.ondernemers section:nth-of-type(9) article {
+  background-color: var(--card-color);
+  box-shadow: 0 0px 16px 0 var(--box-shadow);
+  border-radius: 2em;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-bottom: 3em;
+  padding: 1.5em;
+}
+
+.ondernemers section:nth-of-type(9) img {
+  box-shadow: none;
+  height: 7.5em;
+  margin: 1em auto;
+  width: auto;
+}
+
+.ondernemers section:nth-of-type(9) p {
+  text-align: center;
+}
+
+/* ------------- */
+/* 10e section */
+/* ------------- */
+.ondernemers section:nth-of-type(10) h2 {
+  font-size: 3em;
+}
+
+.ondernemers section:nth-of-type(10) {
+  border-radius: 30% 70% 60% 40% / 31% 20% 80% 69%;
+
+  animation: blob 15s ease-in-out infinite;
+}
+
+.ondernemers section:nth-of-type(10) div{
+  padding-top: 5em;
+  margin-bottom: 3em;
+  text-align: center;
+}
+
+.ondernemers section:nth-of-type(10) h3 {
+  color: #000000;
+}
+
+.ondernemers section:nth-of-type(10) button {
+  background-color: #ffffff;
+  box-shadow: none;
+  color: #000000;
+  letter-spacing: 0;
+  width: fit-content;
+}
+.ondernemers section:nth-of-type(10) button:hover {
+  border: 0.2em solid #000000;
+}
+
+@keyframes blob {
+  0% {
+		border-radius: 30% 70% 60% 40% / 31% 20% 80% 69%;
+		background: linear-gradient(45deg, #a8dadc 0%, #f1faee 100%);
+	} 
+
+	25%{
+    border-radius: 19% 81% 74% 26% / 34% 44% 56% 66%;
+    background: linear-gradient(45deg, #ff5869 0%, #ffcdae 100%);
+  }
+
+	50% {
+		border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+		background: linear-gradient(45deg, #ff91b9 0%, #f7d5e2 100%);
+	}
+
+  75%{
+    border-radius: 45% 55% 22% 78% / 34% 73% 27% 66%;
+    background: linear-gradient(45deg, #3143ff 0%, #a3e3ff 100%);
+  }
+  
+	100% {
+		border-radius: 30% 70% 60% 40% / 31% 20% 80% 69%;
+		background: linear-gradient(45deg, #a86ddb 0%, #ebd5fb 100%);
+	} 
+}
+/* Inspiratie; https://9elements.github.io/fancy-border-radius/#34.19.44.26--. */
